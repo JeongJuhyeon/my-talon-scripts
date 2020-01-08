@@ -7,7 +7,7 @@ alpha_alt = "air bat cap drum each fine gust harp ice jury crunch look made near
 f_keys = {f"F {i}": f"f{i}" for i in range(1, 13)}
 # arrows are separated because 'up' has a high false positive rate
 arrows = ["left", "right", "up", "down"]
-simple_keys = ["tab", "escape", "enter", "space", "pageup", "pagedown"]
+simple_keys = ["tab", "escape", "enter", "space", "pageup", "pagedown", "super"]
 alternate_keys = {"delete": "backspace", "forward delete": "delete"}
 symbols = {
     "back tick": "`",
