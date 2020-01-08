@@ -3,11 +3,11 @@ from talon import ui
 
 apps = {}
 
-overrides = {"from": "Google Chrome", "term": "Gnome-terminal"}
+overrides = {"from": "Google Chrome", "term": "Gnome-terminal", "android": "jetbrains-studio"}
 
 
 def switch_app(m):
-    name = str(m._words[1])
+    name = str(m[1])
 
     full = apps.get(name)
     if not full:

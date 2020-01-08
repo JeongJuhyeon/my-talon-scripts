@@ -15,6 +15,7 @@ formatters = {
     "smash": (True, lambda i, word, _: word),
     "kebab": (True, lambda i, word, _: word if i == 0 else "-" + word),
     "pack": (True, lambda i, word, _: word if i == 0 else "::" + word),
+    "mixed": (True, lambda i, word, _: word.capitalize()),
     "title": (False, lambda i, word, _: word.capitalize()),
     "allcaps": (False, lambda i, word, _: word.upper()),
     "alldown": (False, lambda i, word, _: word.lower()),
@@ -50,19 +51,18 @@ def formatted_text(*formatters):
 
     return _fmt
 
-
 def FormatText(m):
     fmt = []
-    if m._words[-1] == "over":
-        m._words = m._words[:-1]
     for w in m._words:
-        if isinstance(w, Word):
-            fmt.append(w.word)
+        if w in formatters:
+            fmt.append(w)
+        else:
+            break
     try:
         words = parse_words(m)
     except AttributeError:
         with clip.capture() as s:
-            press("ctrl-c")
+            press("cmd-c")
         words = s.get().split(" ")
         if not words:
             return
