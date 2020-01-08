@@ -36,8 +36,6 @@ ctx.vocab = [
 keymap = {}
 keymap.update(
     {
-        "dragon words": "<dgnwords>",
-        "dragon dictation": "<dgndictation>",
         "slap": [Key("ctrl-right enter")],
         "cd": "cd ",
         "cd talon home": "cd {}\n".format(TALON_HOME),
@@ -48,9 +46,6 @@ keymap.update(
         "grep": "grep ",
         "elle less": "ls ",
         "run L S": "ls\n",
-        "run (S S H | S H)": "ssh",
-        "(ssh | sh)": "ssh ",
-        "ack": "ack ",
         "diff": "diff ",
         "dot pie": ".py",
         "run vim": "vim ",
@@ -59,8 +54,6 @@ keymap.update(
         "run make (durr | dear)": "mkdir ",
         "(jay son | jason )": "json",
         "(http | htp)": "http",
-        "tls": "tls",
-        "md5": "md5",
         "(regex | rejex)": "regex",
         "const": "const ",
         "static": "static ",
@@ -78,6 +71,7 @@ keymap.update(
         "tip size": "size_t",
         "tip float": "float ",
         "tip double": "double ",
+        "enum": "enum ",
         "args": ["()", Key("left")],
         "[inside] (index | array)": ["[]", Key("left")],
         "block": ["{}", Key("left enter enter up tab")],
@@ -99,7 +93,7 @@ keymap.update(
         "word angle": "angle",
         "dunder in it": "__init__",
         "self taught": "self.",
-        "(dickt in it | inside bracket | in bracket)": ["{}", Key("left")],
+        "(dickt in it | inside bracket | in bracket)": ['{}', Key("left")],
         "(in | inside) percent": ["%%", Key("left")],
         "list in it": ["[]", Key("left")],
         "string utf8": "'utf8'",
@@ -134,7 +128,7 @@ keymap.update(
         "mute": Key("mute"),
         "play next": Key("next"),
         "play previous": Key("previous"),
-        "(play | pause)": Key("space"),  # spotify
+        #"(play | pause)": Key("space"),  # spotify
         "copy active bundle": copy_bundle,
         "wipe": Key("backspace"),
         "(pad | padding ) ": ["  ", Key("left")],
