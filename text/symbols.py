@@ -1,4 +1,4 @@
-from talon.voice import Context
+from talon.voice import Context, Key
 
 context = Context("symbols")
 
@@ -12,7 +12,7 @@ context.keymap(
         "colon": ":",
         "(paren | left paren)": "(",
         "(rparen | are paren | right paren)": ")",
-        "(bracket | brack | left bracket)": "{",
+        "(bracket | brack | left bracket)": Key("{"),
         "(rbrack | are bracket | right bracket)": "}",
         "(angle | left angle | less than)": "<",
         "(rangle | are angle | right angle | greater than)": ">",

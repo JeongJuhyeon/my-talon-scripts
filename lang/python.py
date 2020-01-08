@@ -23,7 +23,7 @@ context.keymap(
         "comment py": "# ",
         "dunder in it": "__init__",
         "self taught": "self.",
-        "from import": ["from import ", Key("alt-left"), Key("space"), Key("left")],
-        "for in": ["for in ", Key("alt-left"), Key("space"), Key("left")],
+        "from import": ["from import ", Key("ctrl-left"), Key("space"), Key("left")],
+        "for in": ["for in ", Key("ctrl-left"), Key("space"), Key("left")],
     }
 )

@@ -39,7 +39,7 @@ def jump_to_eol_and(then):
     def fn(m):
         if len(m._words) > 1:
             jump_to_bol(m)
-        press("ctrl-right")
+        press("end")
         then()
 
     return fn
