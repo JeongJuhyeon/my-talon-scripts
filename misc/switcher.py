@@ -3,7 +3,7 @@ from talon import ui
 
 apps = {}
 
-overrides = {"from": "Google Chrome", "term": "Gnome-terminal", "android": "jetbrains-studio"}
+overrides = {"from": "Google Chrome", "term": "Gnome-terminal", "android": "jetbrains-studio", "python": "jetbrains-pycharm", "fees": "Code"}
 
 
 def switch_app(m):
