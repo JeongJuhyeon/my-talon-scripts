@@ -7,7 +7,6 @@ context.keymap(
         "empty dict": "{}",
         "word (dickt | dictionary)": "dict",
         "state (def | deaf | deft)": "def ",
-        "state else if": "elif ",
         "state if": "if ",
         "state while": ["while ()", Key("left")],
         "state for": "for ",
