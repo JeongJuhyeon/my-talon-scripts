@@ -29,13 +29,19 @@ symbols = {
     "dash": "-",
     "equals": "=",
 }
+
 modifiers = {
-    "command": "ctrl",
     "control": "ctrl",
     "shift": "shift",
     "alt": "alt",
-    "option": "alt",
 }
+if app.platform == "mac":
+    modifiers["command"] = "cmd"
+    modifiers["option"] = "alt"
+elif app.platform == "windows":
+    modifiers["windows"] = "win"
+elif app.platform == "linux":
+    modifiers["super"] = "super"
 
 alphabet = dict(zip(alpha_alt, string.ascii_lowercase))
 digits = {'zero': '0', 'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5', 'six': '6', 'seven': '7', 'eight': '8', 'nine': '9'}
